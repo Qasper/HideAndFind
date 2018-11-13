@@ -13,6 +13,9 @@
 		A747206B2180EF1E00145016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A747206A2180EF1E00145016 /* Assets.xcassets */; };
 		A747206E2180EF1E00145016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A747206C2180EF1E00145016 /* LaunchScreen.storyboard */; };
 		A7F3CEDC219ADBD3002EE689 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F3CEDB219ADBD3002EE689 /* FindViewController.swift */; };
+		A7F3CEE0219AE7BA002EE689 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F3CEDF219AE7BA002EE689 /* LoginViewController.swift */; };
+		A7F3CEE3219AE978002EE689 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F3CEE2219AE978002EE689 /* Player.swift */; };
+		A7F3CF28219AEEEE002EE689 /* HideAndFind.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7F3CF26219AEEEE002EE689 /* HideAndFind.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		A747206D2180EF1E00145016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A747206F2180EF1E00145016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7F3CEDB219ADBD3002EE689 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		A7F3CEDF219AE7BA002EE689 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A7F3CEE2219AE978002EE689 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A7F3CF27219AEEEE002EE689 /* HideAndFind.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HideAndFind.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		A74720622180EF1C00145016 /* HideAndFind */ = {
 			isa = PBXGroup;
 			children = (
+				A7F3CEE1219AE95F002EE689 /* ModelClasses */,
 				A74720632180EF1C00145016 /* AppDelegate.swift */,
+				A7F3CF26219AEEEE002EE689 /* HideAndFind.xcdatamodeld */,
 				A74720652180EF1C00145016 /* ViewController.swift */,
 				A74720672180EF1C00145016 /* Main.storyboard */,
 				A747206A2180EF1E00145016 /* Assets.xcassets */,
 				A747206C2180EF1E00145016 /* LaunchScreen.storyboard */,
 				A747206F2180EF1E00145016 /* Info.plist */,
 				A7F3CEDB219ADBD3002EE689 /* FindViewController.swift */,
+				A7F3CEDF219AE7BA002EE689 /* LoginViewController.swift */,
 			);
 			path = HideAndFind;
+			sourceTree = "<group>";
+		};
+		A7F3CEE1219AE95F002EE689 /* ModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				A7F3CEE2219AE978002EE689 /* Player.swift */,
+			);
+			path = ModelClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7F3CEE0219AE7BA002EE689 /* LoginViewController.swift in Sources */,
 				A74720662180EF1C00145016 /* ViewController.swift in Sources */,
 				A74720642180EF1C00145016 /* AppDelegate.swift in Sources */,
+				A7F3CEE3219AE978002EE689 /* Player.swift in Sources */,
+				A7F3CF28219AEEEE002EE689 /* HideAndFind.xcdatamodeld in Sources */,
 				A7F3CEDC219ADBD3002EE689 /* FindViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +358,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A7F3CF26219AEEEE002EE689 /* HideAndFind.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A7F3CF27219AEEEE002EE689 /* HideAndFind.xcdatamodel */,
+			);
+			currentVersion = A7F3CF27219AEEEE002EE689 /* HideAndFind.xcdatamodel */;
+			path = HideAndFind.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A74720582180EF1C00145016 /* Project object */;
 }

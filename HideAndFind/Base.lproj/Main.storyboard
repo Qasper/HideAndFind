@@ -29,7 +29,7 @@
         <!--Find-->
         <scene sceneID="LUE-7H-nPa">
             <objects>
-                <viewController title="Find" id="VhJ-fN-OQ6" sceneMemberID="viewController">
+                <viewController title="Find" id="VhJ-fN-OQ6" customClass="FindViewController" customModule="HideAndFind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D9w-ns-rTq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,6 +48,9 @@
                         <viewLayoutGuide key="safeArea" id="Uon-rY-TgD"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Find" id="nPA-eL-IRT"/>
+                    <connections>
+                        <outlet property="mapView" destination="72E-la-fif" id="cJQ-1P-Fzf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfz-KN-l6L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,7 +59,7 @@
         <!--Login-->
         <scene sceneID="ZjY-Ih-Rg7">
             <objects>
-                <viewController title="Login" id="1LU-AG-Cx9" sceneMemberID="viewController">
+                <viewController title="Login" id="1LU-AG-Cx9" customClass="LoginViewController" customModule="HideAndFind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="euh-2E-2GI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,13 +69,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="bhn-F4-KLf" kind="show" id="9Eb-CO-BuK"/>
+                                    <action selector="doLogin:" destination="1LU-AG-Cx9" eventType="touchUpInside" id="NA9-pu-uXk"/>
+                                    <action selector="fewf:" destination="1LU-AG-Cx9" eventType="touchUpInside" id="7rB-xK-ayc"/>
+                                    <segue destination="bhn-F4-KLf" kind="show" id="bfb-XM-vlo"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-WM-5rZ">
+                                <rect key="frame" x="139" y="318" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lhM-QB-KaU"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTF" destination="Cyd-WM-5rZ" id="0kT-uP-PKt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7V-6S-5it" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

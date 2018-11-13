@@ -12,4 +12,7 @@ import MapKit
 
 class FindViewController : UIViewController {
     
+    @IBOutlet weak var mapView: MKMapView!
+
+    
 }
