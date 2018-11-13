@@ -12,7 +12,7 @@
 		A74720692180EF1C00145016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74720672180EF1C00145016 /* Main.storyboard */; };
 		A747206B2180EF1E00145016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A747206A2180EF1E00145016 /* Assets.xcassets */; };
 		A747206E2180EF1E00145016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A747206C2180EF1E00145016 /* LaunchScreen.storyboard */; };
-		A74720762180F5EA00145016 /* Finder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74720752180F5EA00145016 /* Finder.storyboard */; };
+		A7F3CEDC219ADBD3002EE689 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F3CEDB219ADBD3002EE689 /* FindViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		A747206A2180EF1E00145016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A747206D2180EF1E00145016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A747206F2180EF1E00145016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A74720752180F5EA00145016 /* Finder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Finder.storyboard; sourceTree = "<group>"; };
+		A7F3CEDB219ADBD3002EE689 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				A747206A2180EF1E00145016 /* Assets.xcassets */,
 				A747206C2180EF1E00145016 /* LaunchScreen.storyboard */,
 				A747206F2180EF1E00145016 /* Info.plist */,
-				A74720752180F5EA00145016 /* Finder.storyboard */,
+				A7F3CEDB219ADBD3002EE689 /* FindViewController.swift */,
 			);
 			path = HideAndFind;
 			sourceTree = "<group>";
@@ -125,7 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A74720762180F5EA00145016 /* Finder.storyboard in Resources */,
 				A747206E2180EF1E00145016 /* LaunchScreen.storyboard in Resources */,
 				A747206B2180EF1E00145016 /* Assets.xcassets in Resources */,
 				A74720692180EF1C00145016 /* Main.storyboard in Resources */,
@@ -141,6 +140,7 @@
 			files = (
 				A74720662180EF1C00145016 /* ViewController.swift in Sources */,
 				A74720642180EF1C00145016 /* AppDelegate.swift in Sources */,
+				A7F3CEDC219ADBD3002EE689 /* FindViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
